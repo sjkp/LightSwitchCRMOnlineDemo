@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application
+  Name="LightSwitchApplication.LightSwitchCRMOnlineDemo.HTMLClient" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <Application.Attributes>
+    <Partial />
+  </Application.Attributes>
+  <Association>
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:Account_Referencingaccount_master_account_Account_Referencedacco" />
+    </Association.Attributes>
+  </Association>
+  <Association>
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:Account_Referencingaccount_parent_account_Account_Referencedacco" />
+    </Association.Attributes>
+  </Association>
+  <EntityContainer>
+    <EntityContainer.Attributes>
+      <Proxy
+        Target="ServiceInterface:sjkpdev07ContextData" />
+    </EntityContainer.Attributes>
+  </EntityContainer>
+</Application>

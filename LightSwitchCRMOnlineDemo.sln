@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30626.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{581633EB-B896-402F-8E60-36F3DA191C85}") = "LightSwitchCRMOnlineDemo", "LightSwitchCRMOnlineDemo\LightSwitchCRMOnlineDemo.lsxtproj", "{C9F5AD8D-5D70-475B-9C5B-94EB058BF585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightSwitchCRMOnlineDemo.Server", "LightSwitchCRMOnlineDemo\LightSwitchCRMOnlineDemo.Server\LightSwitchCRMOnlineDemo.Server.csproj", "{E3DFDD2C-91F8-4554-AF7A-D9739148B15C}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "LightSwitchCRMOnlineDemo.HTMLClient", "LightSwitchCRMOnlineDemo\LightSwitchCRMOnlineDemo.HTMLClient\LightSwitchCRMOnlineDemo.HTMLClient.jsproj", "{835EACAD-FB1F-498B-9012-2037BB6C7873}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9F5AD8D-5D70-475B-9C5B-94EB058BF585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F5AD8D-5D70-475B-9C5B-94EB058BF585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F5AD8D-5D70-475B-9C5B-94EB058BF585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F5AD8D-5D70-475B-9C5B-94EB058BF585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DFDD2C-91F8-4554-AF7A-D9739148B15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DFDD2C-91F8-4554-AF7A-D9739148B15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DFDD2C-91F8-4554-AF7A-D9739148B15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DFDD2C-91F8-4554-AF7A-D9739148B15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{835EACAD-FB1F-498B-9012-2037BB6C7873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{835EACAD-FB1F-498B-9012-2037BB6C7873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{835EACAD-FB1F-498B-9012-2037BB6C7873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{835EACAD-FB1F-498B-9012-2037BB6C7873}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

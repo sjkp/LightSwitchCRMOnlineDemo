@@ -1,0 +1,188 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="Microsoft.Crm.Sdk.Data.Services" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2007/05/edm">
+      <ComplexType Name="EntityReference">
+        <Property Name="Id" Type="Edm.Guid" Nullable="true" />
+        <Property Name="LogicalName" Type="Edm.String" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+      </ComplexType>
+      <ComplexType Name="OptionSetValue">
+        <Property Name="Value" Type="Edm.Int32" Nullable="true" />
+      </ComplexType>
+      <ComplexType Name="BooleanManagedProperty">
+        <Property Name="Value" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="CanBeChanged" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="ManagedPropertyLogicalName" Type="Edm.String" Nullable="true" />
+      </ComplexType>
+      <ComplexType Name="Money">
+        <Property Name="Value" Type="Edm.Decimal" Nullable="true" />
+      </ComplexType>
+      <EntityType Name="Account">
+        <Key>
+          <PropertyRef Name="AccountId" />
+        </Key>
+        <Property Name="TerritoryCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="LastUsedInCampaign" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Address1_Name" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_Telephone2" Type="Edm.String" Nullable="true" />
+        <Property Name="OverriddenCreatedOn" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="EntityImageId" Type="Edm.Guid" Nullable="true" />
+        <Property Name="OwnershipCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="PrimaryContactId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="CreditLimit" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="EntityImage_URL" Type="Edm.String" Nullable="true" />
+        <Property Name="TerritoryId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="EntityImage_Timestamp" Type="Edm.Int64" Nullable="true" />
+        <Property Name="Telephone3" Type="Edm.String" Nullable="true" />
+        <Property Name="DoNotBulkPostalMail" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Address1_FreightTermsCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address2_Line1" Type="Edm.String" Nullable="true" />
+        <Property Name="EMailAddress2" Type="Edm.String" Nullable="true" />
+        <Property Name="Address2_PrimaryContactName" Type="Edm.String" Nullable="true" />
+        <Property Name="Telephone2" Type="Edm.String" Nullable="true" />
+        <Property Name="TimeZoneRuleVersionNumber" Type="Edm.Int32" Nullable="true" />
+        <Property Name="OwningTeam" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="ShippingMethodCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address1_AddressId" Type="Edm.Guid" Nullable="true" />
+        <Property Name="Address2_Telephone1" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_Fax" Type="Edm.String" Nullable="true" />
+        <Property Name="OwningBusinessUnit" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="OwnerId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="CreatedOnBehalfBy" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="Address2_Latitude" Type="Edm.Double" Nullable="true" />
+        <Property Name="PreferredContactMethodCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address2_Composite" Type="Edm.String" Nullable="true" />
+        <Property Name="Aging90_Base" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="Address2_PostalCode" Type="Edm.String" Nullable="true" />
+        <Property Name="Merged" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="PaymentTermsCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="DoNotSendMM" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Address2_County" Type="Edm.String" Nullable="true" />
+        <Property Name="Aging30" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="Address2_City" Type="Edm.String" Nullable="true" />
+        <Property Name="DoNotBulkEMail" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="ImportSequenceNumber" Type="Edm.Int32" Nullable="true" />
+        <Property Name="EMailAddress3" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_City" Type="Edm.String" Nullable="true" />
+        <Property Name="WebSiteURL" Type="Edm.String" Nullable="true" />
+        <Property Name="Revenue" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="TransactionCurrencyId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="Address1_ShippingMethodCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address1_PostOfficeBox" Type="Edm.String" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <Property Name="TickerSymbol" Type="Edm.String" Nullable="true" />
+        <Property Name="Address2_Longitude" Type="Edm.Double" Nullable="true" />
+        <Property Name="SIC" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_County" Type="Edm.String" Nullable="true" />
+        <Property Name="OwningUser" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="Address2_AddressId" Type="Edm.Guid" Nullable="true" />
+        <Property Name="CreditLimit_Base" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="PreferredSystemUserId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="MarketCap" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="Address1_PrimaryContactName" Type="Edm.String" Nullable="true" />
+        <Property Name="DoNotPostalMail" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="AccountCategoryCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="StateCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address2_Telephone3" Type="Edm.String" Nullable="true" />
+        <Property Name="Address2_AddressTypeCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="EntityImage" Type="Edm.Binary" Nullable="true" />
+        <Property Name="DoNotFax" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="DefaultPriceLevelId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="ParticipatesInWorkflow" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="CustomerSizeCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address2_UPSZone" Type="Edm.String" Nullable="true" />
+        <Property Name="PreferredServiceId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="UTCConversionTimeZoneCode" Type="Edm.Int32" Nullable="true" />
+        <Property Name="DoNotEMail" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Aging60" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="CustomerTypeCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Telephone1" Type="Edm.String" Nullable="true" />
+        <Property Name="CreatedBy" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="Address2_Name" Type="Edm.String" Nullable="true" />
+        <Property Name="ModifiedBy" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="Aging30_Base" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="YomiName" Type="Edm.String" Nullable="true" />
+        <Property Name="Address2_Country" Type="Edm.String" Nullable="true" />
+        <Property Name="Address2_Fax" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_UPSZone" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_PostalCode" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_Country" Type="Edm.String" Nullable="true" />
+        <Property Name="NumberOfEmployees" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Address2_FreightTermsCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="AccountRatingCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="FtpSiteURL" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_Longitude" Type="Edm.Double" Nullable="true" />
+        <Property Name="AccountId" Type="Edm.Guid" Nullable="false" />
+        <Property Name="OriginatingLeadId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="Fax" Type="Edm.String" Nullable="true" />
+        <Property Name="CreditOnHold" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Address1_Telephone1" Type="Edm.String" Nullable="true" />
+        <Property Name="CreatedOn" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="ExchangeRate" Type="Edm.Decimal" Nullable="true" />
+        <Property Name="Address2_ShippingMethodCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address2_Line2" Type="Edm.String" Nullable="true" />
+        <Property Name="VersionNumber" Type="Edm.Int64" Nullable="true" />
+        <Property Name="AccountNumber" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_Line1" Type="Edm.String" Nullable="true" />
+        <Property Name="Revenue_Base" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="DoNotPhone" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="AccountClassificationCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="PreferredEquipmentId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="MarketCap_Base" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="StageId" Type="Edm.Guid" Nullable="true" />
+        <Property Name="ProcessId" Type="Edm.Guid" Nullable="true" />
+        <Property Name="Address2_Telephone2" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_AddressTypeCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address1_UTCOffset" Type="Edm.Int32" Nullable="true" />
+        <Property Name="ParentAccountId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="Address1_Line2" Type="Edm.String" Nullable="true" />
+        <Property Name="BusinessTypeCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Aging60_Base" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="ModifiedOnBehalfBy" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="StockExchange" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_Line3" Type="Edm.String" Nullable="true" />
+        <Property Name="MasterId" Type="Microsoft.Crm.Sdk.Data.Services.EntityReference" Nullable="false" />
+        <Property Name="Aging90" Type="Microsoft.Crm.Sdk.Data.Services.Money" Nullable="false" />
+        <Property Name="StatusCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address2_PostOfficeBox" Type="Edm.String" Nullable="true" />
+        <Property Name="SharesOutstanding" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Address1_StateOrProvince" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_Latitude" Type="Edm.Double" Nullable="true" />
+        <Property Name="ModifiedOn" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Address2_Line3" Type="Edm.String" Nullable="true" />
+        <Property Name="Address2_UTCOffset" Type="Edm.Int32" Nullable="true" />
+        <Property Name="PreferredAppointmentDayCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="PreferredAppointmentTimeCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="EMailAddress1" Type="Edm.String" Nullable="true" />
+        <Property Name="Address2_StateOrProvince" Type="Edm.String" Nullable="true" />
+        <Property Name="Address1_Composite" Type="Edm.String" Nullable="true" />
+        <Property Name="IndustryCode" Type="Microsoft.Crm.Sdk.Data.Services.OptionSetValue" Nullable="false" />
+        <Property Name="Address1_Telephone3" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Referencingaccount_master_account" Relationship="Microsoft.Crm.Sdk.Data.Services.Account_Referencingaccount_master_account_Account_Referencedaccount_master_account" FromRole="Account_Referencingaccount_master_account" ToRole="Account_Referencedaccount_master_account" />
+        <NavigationProperty Name="Referencedaccount_master_account" Relationship="Microsoft.Crm.Sdk.Data.Services.Account_Referencingaccount_master_account_Account_Referencedaccount_master_account" FromRole="Account_Referencedaccount_master_account" ToRole="Account_Referencingaccount_master_account" />
+        <NavigationProperty Name="Referencingaccount_parent_account" Relationship="Microsoft.Crm.Sdk.Data.Services.Account_Referencingaccount_parent_account_Account_Referencedaccount_parent_account" FromRole="Account_Referencingaccount_parent_account" ToRole="Account_Referencedaccount_parent_account" />
+        <NavigationProperty Name="Referencedaccount_parent_account" Relationship="Microsoft.Crm.Sdk.Data.Services.Account_Referencingaccount_parent_account_Account_Referencedaccount_parent_account" FromRole="Account_Referencedaccount_parent_account" ToRole="Account_Referencingaccount_parent_account" />
+      </EntityType>
+      <Association Name="Account_Referencingaccount_master_account_Account_Referencedaccount_master_account">
+        <End Role="Account_Referencingaccount_master_account" Type="Microsoft.Crm.Sdk.Data.Services.Account" Multiplicity="*" />
+        <End Role="Account_Referencedaccount_master_account" Type="Microsoft.Crm.Sdk.Data.Services.Account" Multiplicity="0..1" />
+      </Association>
+      <Association Name="Account_Referencingaccount_parent_account_Account_Referencedaccount_parent_account">
+        <End Role="Account_Referencingaccount_parent_account" Type="Microsoft.Crm.Sdk.Data.Services.Account" Multiplicity="*" />
+        <End Role="Account_Referencedaccount_parent_account" Type="Microsoft.Crm.Sdk.Data.Services.Account" Multiplicity="0..1" />
+      </Association>
+      <EntityContainer Name="sjkpdev07Context" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="AccountSet" EntityType="Microsoft.Crm.Sdk.Data.Services.Account" />
+        <AssociationSet Name="Accountaccount_master_accountAccount" Association="Microsoft.Crm.Sdk.Data.Services.Account_Referencingaccount_master_account_Account_Referencedaccount_master_account">
+          <End Role="Account_Referencingaccount_master_account" EntitySet="AccountSet" />
+          <End Role="Account_Referencedaccount_master_account" EntitySet="AccountSet" />
+        </AssociationSet>
+        <AssociationSet Name="Accountaccount_parent_accountAccount" Association="Microsoft.Crm.Sdk.Data.Services.Account_Referencingaccount_parent_account_Account_Referencedaccount_parent_account">
+          <End Role="Account_Referencingaccount_parent_account" EntitySet="AccountSet" />
+          <End Role="Account_Referencedaccount_parent_account" EntitySet="AccountSet" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,1987 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="Account">
+    <EntityType.Attributes>
+      <NotSearchable />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <EntityProperty
+        Name="TerritoryCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="LastUsedInCampaign"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Telephone2"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OverriddenCreatedOn"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="EntityImageId"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OwnershipCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PrimaryContactId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PrimaryContactId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="PrimaryContactId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="CreditLimit_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="EntityImage_URL"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="TerritoryId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TerritoryId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="TerritoryId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="EntityImage_Timestamp"
+        PropertyType=":Int64?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Telephone3"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="DoNotBulkPostalMail"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_FreightTermsCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_Line1"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="EMailAddress2"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_PrimaryContactName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Telephone2"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="TimeZoneRuleVersionNumber"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OwningTeam_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OwningTeam_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OwningTeam_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="ShippingMethodCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_AddressId"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_Telephone1"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Fax"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OwningBusinessUnit_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OwningBusinessUnit_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OwningBusinessUnit_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OwnerId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OwnerId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OwnerId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="CreatedOnBehalfBy_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CreatedOnBehalfBy_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="CreatedOnBehalfBy_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_Latitude"
+        PropertyType=":Double?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PreferredContactMethodCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_Composite"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Aging90_Base_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_PostalCode"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Merged"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PaymentTermsCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DoNotSendMM"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_County"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Aging30_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_City"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="DoNotBulkEMail"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ImportSequenceNumber"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="EMailAddress3"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_City"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="WebSiteURL"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Revenue_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TransactionCurrencyId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TransactionCurrencyId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="TransactionCurrencyId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_ShippingMethodCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_PostOfficeBox"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Description"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="TickerSymbol"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_Longitude"
+        PropertyType=":Double?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SIC"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_County"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OwningUser_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OwningUser_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OwningUser_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_AddressId"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CreditLimit_Base_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PreferredSystemUserId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PreferredSystemUserId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="PreferredSystemUserId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="MarketCap_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_PrimaryContactName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="DoNotPostalMail"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AccountCategoryCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StateCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_Telephone3"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_AddressTypeCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="EntityImage"
+        PropertyType=":Binary?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DoNotFax"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DefaultPriceLevelId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DefaultPriceLevelId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="DefaultPriceLevelId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="ParticipatesInWorkflow"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CustomerSizeCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_UPSZone"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="PreferredServiceId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PreferredServiceId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="PreferredServiceId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="UTCConversionTimeZoneCode"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DoNotEMail"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Aging60_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CustomerTypeCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Telephone1"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="CreatedBy_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CreatedBy_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="CreatedBy_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="ModifiedBy_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedBy_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="ModifiedBy_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Aging30_Base_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="YomiName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_Country"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_Fax"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_UPSZone"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_PostalCode"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Country"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="NumberOfEmployees"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_FreightTermsCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AccountRatingCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FtpSiteURL"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Longitude"
+        PropertyType=":Double?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <KeyProperty
+        Name="AccountId"
+        PropertyType=":Guid">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="OriginatingLeadId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OriginatingLeadId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="OriginatingLeadId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Fax"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="CreditOnHold"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_Telephone1"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="CreatedOn"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="ExchangeRate"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_ShippingMethodCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_Line2"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="VersionNumber"
+        PropertyType=":Int64?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AccountNumber"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Line1"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Revenue_Base_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DoNotPhone"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AccountClassificationCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PreferredEquipmentId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PreferredEquipmentId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="PreferredEquipmentId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="MarketCap_Base_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StageId"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ProcessId"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_Telephone2"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_AddressTypeCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_UTCOffset"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ParentAccountId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ParentAccountId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="ParentAccountId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Line2"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="BusinessTypeCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Aging60_Base_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedOnBehalfBy_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedOnBehalfBy_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="ModifiedOnBehalfBy_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="StockExchange"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Line3"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="MasterId_Id"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MasterId_LogicalName"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="MasterId_Name"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Aging90_Value"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StatusCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_PostOfficeBox"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="SharesOutstanding"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_StateOrProvince"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Latitude"
+        PropertyType=":Double?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedOn"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2_Line3"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_UTCOffset"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PreferredAppointmentDayCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PreferredAppointmentTimeCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="EMailAddress1"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address2_StateOrProvince"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="Address1_Composite"
+        PropertyType=":String?" />
+      <EntityProperty
+        Name="IndustryCode_Value"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1_Telephone3"
+        PropertyType=":String?" />
+      <NavigationProperty
+        Name="Referencingaccount_master_account"
+        Association="Account_Referencingaccount_master_account_Account_Referencedacco"
+        FromEnd="Account_Referencingaccount_master_account"
+        ToEnd="Account_Referencedaccount_master_account">
+        <NavigationProperty.Attributes>
+          <Hidden />
+        </NavigationProperty.Attributes>
+      </NavigationProperty>
+      <NavigationProperty
+        Name="Referencedaccount_master_account"
+        Association="Account_Referencingaccount_master_account_Account_Referencedacco"
+        FromEnd="Account_Referencedaccount_master_account"
+        ToEnd="Account_Referencingaccount_master_account" />
+      <NavigationProperty
+        Name="Referencingaccount_parent_account"
+        Association="Account_Referencingaccount_parent_account_Account_Referencedacco"
+        FromEnd="Account_Referencingaccount_parent_account"
+        ToEnd="Account_Referencedaccount_parent_account">
+        <NavigationProperty.Attributes>
+          <Hidden />
+        </NavigationProperty.Attributes>
+      </NavigationProperty>
+      <NavigationProperty
+        Name="Referencedaccount_parent_account"
+        Association="Account_Referencingaccount_parent_account_Account_Referencedacco"
+        FromEnd="Account_Referencedaccount_parent_account"
+        ToEnd="Account_Referencingaccount_parent_account" />
+    </EntityType.Properties>
+  </EntityType>
+  <Association
+    Name="Account_Referencingaccount_master_account_Account_Referencedacco">
+    <AssociationEnd
+      Name="Account_Referencingaccount_master_account"
+      Multiplicity="Many"
+      EntityType="Account" />
+    <AssociationEnd
+      Name="Account_Referencedaccount_master_account"
+      EntityType="Account">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Account_Referencingaccount_parent_account_Account_Referencedacco">
+    <AssociationEnd
+      Name="Account_Referencingaccount_parent_account"
+      Multiplicity="Many"
+      EntityType="Account" />
+    <AssociationEnd
+      Name="Account_Referencedaccount_parent_account"
+      EntityType="Account">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <EntityContainer
+    Name="sjkpdev07ContextData">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="AccountSet"
+      EntityType="Account" />
+    <AssociationSet
+      Name="Accountaccount_master_accountAccount"
+      Association="Account_Referencingaccount_master_account_Account_Referencedacco">
+      <AssociationSetEnd
+        Name="Account_Referencingaccount_master_account"
+        EntitySet="AccountSet" />
+      <AssociationSetEnd
+        Name="Account_Referencedaccount_master_account"
+        EntitySet="AccountSet" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Accountaccount_parent_accountAccount"
+      Association="Account_Referencingaccount_parent_account_Account_Referencedacco">
+      <AssociationSetEnd
+        Name="Account_Referencingaccount_parent_account"
+        EntitySet="AccountSet" />
+      <AssociationSetEnd
+        Name="Account_Referencedaccount_parent_account"
+        EntitySet="AccountSet" />
+    </AssociationSet>
+    <QueryOperation
+      Name="AccountSet_Single"
+      ReturnType="Account">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="AccountId" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="AccountId" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="AccountSet" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="AccountId"
+        ParameterType="Microsoft.LightSwitch:Guid?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'AccountId' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="AccountSet_SingleOrDefault"
+      ReturnType="Account">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="AccountId" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="AccountId" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="AccountSet" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="AccountId"
+        ParameterType="Microsoft.LightSwitch:Guid?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'AccountId' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="sjkpdev07ContextDataDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="AccountSet">
+      <EntitySetMapping.Attributes>
+        <CsdlEntitySet
+          EntityTypeName="Account"
+          EntityTypeNamespace="Microsoft.Crm.Sdk.Data.Services"
+          Name="AccountSet"
+          EntityType="Account" />
+        <CsdlProperty
+          Name="TerritoryCode.Value"
+          Property="Account/Properties[TerritoryCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="LastUsedInCampaign"
+          Property="Account/Properties[LastUsedInCampaign]" />
+        <CsdlProperty
+          Name="Address1_Name"
+          Property="Account/Properties[Address1_Name]" />
+        <CsdlProperty
+          Name="Address1_Telephone2"
+          Property="Account/Properties[Address1_Telephone2]" />
+        <CsdlProperty
+          Name="OverriddenCreatedOn"
+          Property="Account/Properties[OverriddenCreatedOn]" />
+        <CsdlProperty
+          Name="EntityImageId"
+          Property="Account/Properties[EntityImageId]" />
+        <CsdlProperty
+          Name="OwnershipCode.Value"
+          Property="Account/Properties[OwnershipCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PrimaryContactId.Id"
+          Property="Account/Properties[PrimaryContactId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PrimaryContactId.LogicalName"
+          Property="Account/Properties[PrimaryContactId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PrimaryContactId.Name"
+          Property="Account/Properties[PrimaryContactId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="CreditLimit.Value"
+          Property="Account/Properties[CreditLimit_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="EntityImage_URL"
+          Property="Account/Properties[EntityImage_URL]" />
+        <CsdlProperty
+          Name="TerritoryId.Id"
+          Property="Account/Properties[TerritoryId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="TerritoryId.LogicalName"
+          Property="Account/Properties[TerritoryId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="TerritoryId.Name"
+          Property="Account/Properties[TerritoryId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="EntityImage_Timestamp"
+          Property="Account/Properties[EntityImage_Timestamp]" />
+        <CsdlProperty
+          Name="Telephone3"
+          Property="Account/Properties[Telephone3]" />
+        <CsdlProperty
+          Name="DoNotBulkPostalMail"
+          Property="Account/Properties[DoNotBulkPostalMail]" />
+        <CsdlProperty
+          Name="Address1_FreightTermsCode.Value"
+          Property="Account/Properties[Address1_FreightTermsCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_Line1"
+          Property="Account/Properties[Address2_Line1]" />
+        <CsdlProperty
+          Name="EMailAddress2"
+          Property="Account/Properties[EMailAddress2]" />
+        <CsdlProperty
+          Name="Address2_PrimaryContactName"
+          Property="Account/Properties[Address2_PrimaryContactName]" />
+        <CsdlProperty
+          Name="Telephone2"
+          Property="Account/Properties[Telephone2]" />
+        <CsdlProperty
+          Name="TimeZoneRuleVersionNumber"
+          Property="Account/Properties[TimeZoneRuleVersionNumber]" />
+        <CsdlProperty
+          Name="OwningTeam.Id"
+          Property="Account/Properties[OwningTeam_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwningTeam.LogicalName"
+          Property="Account/Properties[OwningTeam_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwningTeam.Name"
+          Property="Account/Properties[OwningTeam_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ShippingMethodCode.Value"
+          Property="Account/Properties[ShippingMethodCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address1_AddressId"
+          Property="Account/Properties[Address1_AddressId]" />
+        <CsdlProperty
+          Name="Address2_Telephone1"
+          Property="Account/Properties[Address2_Telephone1]" />
+        <CsdlProperty
+          Name="Address1_Fax"
+          Property="Account/Properties[Address1_Fax]" />
+        <CsdlProperty
+          Name="OwningBusinessUnit.Id"
+          Property="Account/Properties[OwningBusinessUnit_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwningBusinessUnit.LogicalName"
+          Property="Account/Properties[OwningBusinessUnit_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwningBusinessUnit.Name"
+          Property="Account/Properties[OwningBusinessUnit_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwnerId.Id"
+          Property="Account/Properties[OwnerId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwnerId.LogicalName"
+          Property="Account/Properties[OwnerId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwnerId.Name"
+          Property="Account/Properties[OwnerId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="CreatedOnBehalfBy.Id"
+          Property="Account/Properties[CreatedOnBehalfBy_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="CreatedOnBehalfBy.LogicalName"
+          Property="Account/Properties[CreatedOnBehalfBy_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="CreatedOnBehalfBy.Name"
+          Property="Account/Properties[CreatedOnBehalfBy_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_Latitude"
+          Property="Account/Properties[Address2_Latitude]" />
+        <CsdlProperty
+          Name="PreferredContactMethodCode.Value"
+          Property="Account/Properties[PreferredContactMethodCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_Composite"
+          Property="Account/Properties[Address2_Composite]" />
+        <CsdlProperty
+          Name="Aging90_Base.Value"
+          Property="Account/Properties[Aging90_Base_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_PostalCode"
+          Property="Account/Properties[Address2_PostalCode]" />
+        <CsdlProperty
+          Name="Merged"
+          Property="Account/Properties[Merged]" />
+        <CsdlProperty
+          Name="PaymentTermsCode.Value"
+          Property="Account/Properties[PaymentTermsCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="DoNotSendMM"
+          Property="Account/Properties[DoNotSendMM]" />
+        <CsdlProperty
+          Name="Address2_County"
+          Property="Account/Properties[Address2_County]" />
+        <CsdlProperty
+          Name="Aging30.Value"
+          Property="Account/Properties[Aging30_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_City"
+          Property="Account/Properties[Address2_City]" />
+        <CsdlProperty
+          Name="DoNotBulkEMail"
+          Property="Account/Properties[DoNotBulkEMail]" />
+        <CsdlProperty
+          Name="ImportSequenceNumber"
+          Property="Account/Properties[ImportSequenceNumber]" />
+        <CsdlProperty
+          Name="EMailAddress3"
+          Property="Account/Properties[EMailAddress3]" />
+        <CsdlProperty
+          Name="Address1_City"
+          Property="Account/Properties[Address1_City]" />
+        <CsdlProperty
+          Name="WebSiteURL"
+          Property="Account/Properties[WebSiteURL]" />
+        <CsdlProperty
+          Name="Revenue.Value"
+          Property="Account/Properties[Revenue_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="TransactionCurrencyId.Id"
+          Property="Account/Properties[TransactionCurrencyId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="TransactionCurrencyId.LogicalName"
+          Property="Account/Properties[TransactionCurrencyId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="TransactionCurrencyId.Name"
+          Property="Account/Properties[TransactionCurrencyId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address1_ShippingMethodCode.Value"
+          Property="Account/Properties[Address1_ShippingMethodCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address1_PostOfficeBox"
+          Property="Account/Properties[Address1_PostOfficeBox]" />
+        <CsdlProperty
+          Name="Description"
+          Property="Account/Properties[Description]" />
+        <CsdlProperty
+          Name="TickerSymbol"
+          Property="Account/Properties[TickerSymbol]" />
+        <CsdlProperty
+          Name="Address2_Longitude"
+          Property="Account/Properties[Address2_Longitude]" />
+        <CsdlProperty
+          Name="SIC"
+          Property="Account/Properties[SIC]" />
+        <CsdlProperty
+          Name="Address1_County"
+          Property="Account/Properties[Address1_County]" />
+        <CsdlProperty
+          Name="OwningUser.Id"
+          Property="Account/Properties[OwningUser_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwningUser.LogicalName"
+          Property="Account/Properties[OwningUser_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OwningUser.Name"
+          Property="Account/Properties[OwningUser_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_AddressId"
+          Property="Account/Properties[Address2_AddressId]" />
+        <CsdlProperty
+          Name="CreditLimit_Base.Value"
+          Property="Account/Properties[CreditLimit_Base_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredSystemUserId.Id"
+          Property="Account/Properties[PreferredSystemUserId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredSystemUserId.LogicalName"
+          Property="Account/Properties[PreferredSystemUserId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredSystemUserId.Name"
+          Property="Account/Properties[PreferredSystemUserId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="MarketCap.Value"
+          Property="Account/Properties[MarketCap_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address1_PrimaryContactName"
+          Property="Account/Properties[Address1_PrimaryContactName]" />
+        <CsdlProperty
+          Name="DoNotPostalMail"
+          Property="Account/Properties[DoNotPostalMail]" />
+        <CsdlProperty
+          Name="AccountCategoryCode.Value"
+          Property="Account/Properties[AccountCategoryCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="StateCode.Value"
+          Property="Account/Properties[StateCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_Telephone3"
+          Property="Account/Properties[Address2_Telephone3]" />
+        <CsdlProperty
+          Name="Address2_AddressTypeCode.Value"
+          Property="Account/Properties[Address2_AddressTypeCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="EntityImage"
+          Property="Account/Properties[EntityImage]" />
+        <CsdlProperty
+          Name="DoNotFax"
+          Property="Account/Properties[DoNotFax]" />
+        <CsdlProperty
+          Name="DefaultPriceLevelId.Id"
+          Property="Account/Properties[DefaultPriceLevelId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="DefaultPriceLevelId.LogicalName"
+          Property="Account/Properties[DefaultPriceLevelId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="DefaultPriceLevelId.Name"
+          Property="Account/Properties[DefaultPriceLevelId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ParticipatesInWorkflow"
+          Property="Account/Properties[ParticipatesInWorkflow]" />
+        <CsdlProperty
+          Name="CustomerSizeCode.Value"
+          Property="Account/Properties[CustomerSizeCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_UPSZone"
+          Property="Account/Properties[Address2_UPSZone]" />
+        <CsdlProperty
+          Name="PreferredServiceId.Id"
+          Property="Account/Properties[PreferredServiceId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredServiceId.LogicalName"
+          Property="Account/Properties[PreferredServiceId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredServiceId.Name"
+          Property="Account/Properties[PreferredServiceId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="UTCConversionTimeZoneCode"
+          Property="Account/Properties[UTCConversionTimeZoneCode]" />
+        <CsdlProperty
+          Name="DoNotEMail"
+          Property="Account/Properties[DoNotEMail]" />
+        <CsdlProperty
+          Name="Aging60.Value"
+          Property="Account/Properties[Aging60_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="CustomerTypeCode.Value"
+          Property="Account/Properties[CustomerTypeCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Telephone1"
+          Property="Account/Properties[Telephone1]" />
+        <CsdlProperty
+          Name="CreatedBy.Id"
+          Property="Account/Properties[CreatedBy_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="CreatedBy.LogicalName"
+          Property="Account/Properties[CreatedBy_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="CreatedBy.Name"
+          Property="Account/Properties[CreatedBy_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_Name"
+          Property="Account/Properties[Address2_Name]" />
+        <CsdlProperty
+          Name="ModifiedBy.Id"
+          Property="Account/Properties[ModifiedBy_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ModifiedBy.LogicalName"
+          Property="Account/Properties[ModifiedBy_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ModifiedBy.Name"
+          Property="Account/Properties[ModifiedBy_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Aging30_Base.Value"
+          Property="Account/Properties[Aging30_Base_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="YomiName"
+          Property="Account/Properties[YomiName]" />
+        <CsdlProperty
+          Name="Address2_Country"
+          Property="Account/Properties[Address2_Country]" />
+        <CsdlProperty
+          Name="Address2_Fax"
+          Property="Account/Properties[Address2_Fax]" />
+        <CsdlProperty
+          Name="Address1_UPSZone"
+          Property="Account/Properties[Address1_UPSZone]" />
+        <CsdlProperty
+          Name="Address1_PostalCode"
+          Property="Account/Properties[Address1_PostalCode]" />
+        <CsdlProperty
+          Name="Address1_Country"
+          Property="Account/Properties[Address1_Country]" />
+        <CsdlProperty
+          Name="NumberOfEmployees"
+          Property="Account/Properties[NumberOfEmployees]" />
+        <CsdlProperty
+          Name="Address2_FreightTermsCode.Value"
+          Property="Account/Properties[Address2_FreightTermsCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="AccountRatingCode.Value"
+          Property="Account/Properties[AccountRatingCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="FtpSiteURL"
+          Property="Account/Properties[FtpSiteURL]" />
+        <CsdlProperty
+          Name="Address1_Longitude"
+          Property="Account/Properties[Address1_Longitude]" />
+        <CsdlProperty
+          Name="AccountId"
+          Property="Account/Properties[AccountId]" />
+        <CsdlProperty
+          Name="OriginatingLeadId.Id"
+          Property="Account/Properties[OriginatingLeadId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OriginatingLeadId.LogicalName"
+          Property="Account/Properties[OriginatingLeadId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="OriginatingLeadId.Name"
+          Property="Account/Properties[OriginatingLeadId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Fax"
+          Property="Account/Properties[Fax]" />
+        <CsdlProperty
+          Name="CreditOnHold"
+          Property="Account/Properties[CreditOnHold]" />
+        <CsdlProperty
+          Name="Address1_Telephone1"
+          Property="Account/Properties[Address1_Telephone1]" />
+        <CsdlProperty
+          Name="CreatedOn"
+          Property="Account/Properties[CreatedOn]" />
+        <CsdlProperty
+          Name="Name"
+          Property="Account/Properties[Name]" />
+        <CsdlProperty
+          Name="ExchangeRate"
+          Property="Account/Properties[ExchangeRate]" />
+        <CsdlProperty
+          Name="Address2_ShippingMethodCode.Value"
+          Property="Account/Properties[Address2_ShippingMethodCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_Line2"
+          Property="Account/Properties[Address2_Line2]" />
+        <CsdlProperty
+          Name="VersionNumber"
+          Property="Account/Properties[VersionNumber]" />
+        <CsdlProperty
+          Name="AccountNumber"
+          Property="Account/Properties[AccountNumber]" />
+        <CsdlProperty
+          Name="Address1_Line1"
+          Property="Account/Properties[Address1_Line1]" />
+        <CsdlProperty
+          Name="Revenue_Base.Value"
+          Property="Account/Properties[Revenue_Base_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="DoNotPhone"
+          Property="Account/Properties[DoNotPhone]" />
+        <CsdlProperty
+          Name="AccountClassificationCode.Value"
+          Property="Account/Properties[AccountClassificationCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredEquipmentId.Id"
+          Property="Account/Properties[PreferredEquipmentId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredEquipmentId.LogicalName"
+          Property="Account/Properties[PreferredEquipmentId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredEquipmentId.Name"
+          Property="Account/Properties[PreferredEquipmentId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="MarketCap_Base.Value"
+          Property="Account/Properties[MarketCap_Base_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="StageId"
+          Property="Account/Properties[StageId]" />
+        <CsdlProperty
+          Name="ProcessId"
+          Property="Account/Properties[ProcessId]" />
+        <CsdlProperty
+          Name="Address2_Telephone2"
+          Property="Account/Properties[Address2_Telephone2]" />
+        <CsdlProperty
+          Name="Address1_AddressTypeCode.Value"
+          Property="Account/Properties[Address1_AddressTypeCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address1_UTCOffset"
+          Property="Account/Properties[Address1_UTCOffset]" />
+        <CsdlProperty
+          Name="ParentAccountId.Id"
+          Property="Account/Properties[ParentAccountId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ParentAccountId.LogicalName"
+          Property="Account/Properties[ParentAccountId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ParentAccountId.Name"
+          Property="Account/Properties[ParentAccountId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address1_Line2"
+          Property="Account/Properties[Address1_Line2]" />
+        <CsdlProperty
+          Name="BusinessTypeCode.Value"
+          Property="Account/Properties[BusinessTypeCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Aging60_Base.Value"
+          Property="Account/Properties[Aging60_Base_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ModifiedOnBehalfBy.Id"
+          Property="Account/Properties[ModifiedOnBehalfBy_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ModifiedOnBehalfBy.LogicalName"
+          Property="Account/Properties[ModifiedOnBehalfBy_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="ModifiedOnBehalfBy.Name"
+          Property="Account/Properties[ModifiedOnBehalfBy_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="StockExchange"
+          Property="Account/Properties[StockExchange]" />
+        <CsdlProperty
+          Name="Address1_Line3"
+          Property="Account/Properties[Address1_Line3]" />
+        <CsdlProperty
+          Name="MasterId.Id"
+          Property="Account/Properties[MasterId_Id]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="MasterId.LogicalName"
+          Property="Account/Properties[MasterId_LogicalName]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="MasterId.Name"
+          Property="Account/Properties[MasterId_Name]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Aging90.Value"
+          Property="Account/Properties[Aging90_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="StatusCode.Value"
+          Property="Account/Properties[StatusCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address2_PostOfficeBox"
+          Property="Account/Properties[Address2_PostOfficeBox]" />
+        <CsdlProperty
+          Name="SharesOutstanding"
+          Property="Account/Properties[SharesOutstanding]" />
+        <CsdlProperty
+          Name="Address1_StateOrProvince"
+          Property="Account/Properties[Address1_StateOrProvince]" />
+        <CsdlProperty
+          Name="Address1_Latitude"
+          Property="Account/Properties[Address1_Latitude]" />
+        <CsdlProperty
+          Name="ModifiedOn"
+          Property="Account/Properties[ModifiedOn]" />
+        <CsdlProperty
+          Name="Address2_Line3"
+          Property="Account/Properties[Address2_Line3]" />
+        <CsdlProperty
+          Name="Address2_UTCOffset"
+          Property="Account/Properties[Address2_UTCOffset]" />
+        <CsdlProperty
+          Name="PreferredAppointmentDayCode.Value"
+          Property="Account/Properties[PreferredAppointmentDayCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="PreferredAppointmentTimeCode.Value"
+          Property="Account/Properties[PreferredAppointmentTimeCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="EMailAddress1"
+          Property="Account/Properties[EMailAddress1]" />
+        <CsdlProperty
+          Name="Address2_StateOrProvince"
+          Property="Account/Properties[Address2_StateOrProvince]" />
+        <CsdlProperty
+          Name="Address1_Composite"
+          Property="Account/Properties[Address1_Composite]" />
+        <CsdlProperty
+          Name="IndustryCode.Value"
+          Property="Account/Properties[IndustryCode_Value]">
+          <CsdlProperty.Attributes>
+            <CDTSubProperty />
+          </CsdlProperty.Attributes>
+        </CsdlProperty>
+        <CsdlProperty
+          Name="Address1_Telephone3"
+          Property="Account/Properties[Address1_Telephone3]" />
+        <CsdlProperty
+          Name="Referencingaccount_master_account"
+          Property="Account/Properties[Referencingaccount_master_account]" />
+        <CsdlProperty
+          Name="Referencedaccount_master_account"
+          Property="Account/Properties[Referencedaccount_master_account]" />
+        <CsdlProperty
+          Name="Referencingaccount_parent_account"
+          Property="Account/Properties[Referencingaccount_parent_account]" />
+        <CsdlProperty
+          Name="Referencedaccount_parent_account"
+          Property="Account/Properties[Referencedaccount_parent_account]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="Accountaccount_master_accountAccount">
+      <AssociationSetMapping.Attributes>
+        <CsdlAssociation
+          Name="Accountaccount_master_accountAccount"
+          Association="Account_Referencingaccount_master_account_Account_Referencedacco" />
+        <CsdlAssociationSetEnd
+          End="sjkpdev07ContextData/Members[Accountaccount_master_accountAccount]/Members[Account_Referencedaccount_master_account]" />
+        <CsdlAssociationSetEnd
+          End="sjkpdev07ContextData/Members[Accountaccount_master_accountAccount]/Members[Account_Referencingaccount_master_account]" />
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Accountaccount_parent_accountAccount">
+      <AssociationSetMapping.Attributes>
+        <CsdlAssociation
+          Name="Accountaccount_parent_accountAccount"
+          Association="Account_Referencingaccount_parent_account_Account_Referencedacco" />
+        <CsdlAssociationSetEnd
+          End="sjkpdev07ContextData/Members[Accountaccount_parent_accountAccount]/Members[Account_Referencedaccount_parent_account]" />
+        <CsdlAssociationSetEnd
+          End="sjkpdev07ContextData/Members[Accountaccount_parent_accountAccount]/Members[Account_Referencingaccount_parent_account]" />
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+  </DataService>
+</ServiceApplication>

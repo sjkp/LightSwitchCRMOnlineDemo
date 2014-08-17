@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Namespace="LightSwitchApplication" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="TerritoryCode_Value" Type="Edm.Int32" />
+    <Property Name="LastUsedInCampaign" Type="Edm.DateTime" />
+    <Property Name="Address1_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Telephone2" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OverriddenCreatedOn" Type="Edm.DateTime" />
+    <Property Name="EntityImageId" Type="Edm.Guid" />
+    <Property Name="OwnershipCode_Value" Type="Edm.Int32" />
+    <Property Name="PrimaryContactId_Id" Type="Edm.Guid" />
+    <Property Name="PrimaryContactId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="PrimaryContactId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="CreditLimit_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="EntityImage_URL" Type="Edm.String" MaxLength="Max" />
+    <Property Name="TerritoryId_Id" Type="Edm.Guid" />
+    <Property Name="TerritoryId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="TerritoryId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="EntityImage_Timestamp" Type="Edm.Int64" />
+    <Property Name="Telephone3" Type="Edm.String" MaxLength="Max" />
+    <Property Name="DoNotBulkPostalMail" Type="Edm.Boolean" />
+    <Property Name="Address1_FreightTermsCode_Value" Type="Edm.Int32" />
+    <Property Name="Address2_Line1" Type="Edm.String" MaxLength="Max" />
+    <Property Name="EMailAddress2" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_PrimaryContactName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Telephone2" Type="Edm.String" MaxLength="Max" />
+    <Property Name="TimeZoneRuleVersionNumber" Type="Edm.Int32" />
+    <Property Name="OwningTeam_Id" Type="Edm.Guid" />
+    <Property Name="OwningTeam_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OwningTeam_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="ShippingMethodCode_Value" Type="Edm.Int32" />
+    <Property Name="Address1_AddressId" Type="Edm.Guid" />
+    <Property Name="Address2_Telephone1" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Fax" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OwningBusinessUnit_Id" Type="Edm.Guid" />
+    <Property Name="OwningBusinessUnit_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OwningBusinessUnit_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OwnerId_Id" Type="Edm.Guid" />
+    <Property Name="OwnerId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OwnerId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="CreatedOnBehalfBy_Id" Type="Edm.Guid" />
+    <Property Name="CreatedOnBehalfBy_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="CreatedOnBehalfBy_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_Latitude" Type="Edm.Double" />
+    <Property Name="PreferredContactMethodCode_Value" Type="Edm.Int32" />
+    <Property Name="Address2_Composite" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Aging90_Base_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="Address2_PostalCode" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Merged" Type="Edm.Boolean" />
+    <Property Name="PaymentTermsCode_Value" Type="Edm.Int32" />
+    <Property Name="DoNotSendMM" Type="Edm.Boolean" />
+    <Property Name="Address2_County" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Aging30_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="Address2_City" Type="Edm.String" MaxLength="Max" />
+    <Property Name="DoNotBulkEMail" Type="Edm.Boolean" />
+    <Property Name="ImportSequenceNumber" Type="Edm.Int32" />
+    <Property Name="EMailAddress3" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_City" Type="Edm.String" MaxLength="Max" />
+    <Property Name="WebSiteURL" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Revenue_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="TransactionCurrencyId_Id" Type="Edm.Guid" />
+    <Property Name="TransactionCurrencyId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="TransactionCurrencyId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_ShippingMethodCode_Value" Type="Edm.Int32" />
+    <Property Name="Address1_PostOfficeBox" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Description" Type="Edm.String" MaxLength="Max" />
+    <Property Name="TickerSymbol" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_Longitude" Type="Edm.Double" />
+    <Property Name="SIC" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_County" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OwningUser_Id" Type="Edm.Guid" />
+    <Property Name="OwningUser_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OwningUser_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_AddressId" Type="Edm.Guid" />
+    <Property Name="CreditLimit_Base_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="PreferredSystemUserId_Id" Type="Edm.Guid" />
+    <Property Name="PreferredSystemUserId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="PreferredSystemUserId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="MarketCap_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="Address1_PrimaryContactName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="DoNotPostalMail" Type="Edm.Boolean" />
+    <Property Name="AccountCategoryCode_Value" Type="Edm.Int32" />
+    <Property Name="StateCode_Value" Type="Edm.Int32" />
+    <Property Name="Address2_Telephone3" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_AddressTypeCode_Value" Type="Edm.Int32" />
+    <Property Name="EntityImage" Type="Edm.Binary" MaxLength="Max" />
+    <Property Name="DoNotFax" Type="Edm.Boolean" />
+    <Property Name="DefaultPriceLevelId_Id" Type="Edm.Guid" />
+    <Property Name="DefaultPriceLevelId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="DefaultPriceLevelId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="ParticipatesInWorkflow" Type="Edm.Boolean" />
+    <Property Name="CustomerSizeCode_Value" Type="Edm.Int32" />
+    <Property Name="Address2_UPSZone" Type="Edm.String" MaxLength="Max" />
+    <Property Name="PreferredServiceId_Id" Type="Edm.Guid" />
+    <Property Name="PreferredServiceId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="PreferredServiceId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="UTCConversionTimeZoneCode" Type="Edm.Int32" />
+    <Property Name="DoNotEMail" Type="Edm.Boolean" />
+    <Property Name="Aging60_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="CustomerTypeCode_Value" Type="Edm.Int32" />
+    <Property Name="Telephone1" Type="Edm.String" MaxLength="Max" />
+    <Property Name="CreatedBy_Id" Type="Edm.Guid" />
+    <Property Name="CreatedBy_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="CreatedBy_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="ModifiedBy_Id" Type="Edm.Guid" />
+    <Property Name="ModifiedBy_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="ModifiedBy_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Aging30_Base_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="YomiName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_Country" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_Fax" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_UPSZone" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_PostalCode" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Country" Type="Edm.String" MaxLength="Max" />
+    <Property Name="NumberOfEmployees" Type="Edm.Int32" />
+    <Property Name="Address2_FreightTermsCode_Value" Type="Edm.Int32" />
+    <Property Name="AccountRatingCode_Value" Type="Edm.Int32" />
+    <Property Name="FtpSiteURL" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Longitude" Type="Edm.Double" />
+    <Property Name="AccountId" Type="Edm.Guid" Nullable="false" />
+    <Property Name="OriginatingLeadId_Id" Type="Edm.Guid" />
+    <Property Name="OriginatingLeadId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="OriginatingLeadId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Fax" Type="Edm.String" MaxLength="Max" />
+    <Property Name="CreditOnHold" Type="Edm.Boolean" />
+    <Property Name="Address1_Telephone1" Type="Edm.String" MaxLength="Max" />
+    <Property Name="CreatedOn" Type="Edm.DateTime" />
+    <Property Name="Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="ExchangeRate" Type="Edm.Decimal" Precision="18" />
+    <Property Name="Address2_ShippingMethodCode_Value" Type="Edm.Int32" />
+    <Property Name="Address2_Line2" Type="Edm.String" MaxLength="Max" />
+    <Property Name="VersionNumber" Type="Edm.Int64" />
+    <Property Name="AccountNumber" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Line1" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Revenue_Base_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="DoNotPhone" Type="Edm.Boolean" />
+    <Property Name="AccountClassificationCode_Value" Type="Edm.Int32" />
+    <Property Name="PreferredEquipmentId_Id" Type="Edm.Guid" />
+    <Property Name="PreferredEquipmentId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="PreferredEquipmentId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="MarketCap_Base_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="StageId" Type="Edm.Guid" />
+    <Property Name="ProcessId" Type="Edm.Guid" />
+    <Property Name="Address2_Telephone2" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_AddressTypeCode_Value" Type="Edm.Int32" />
+    <Property Name="Address1_UTCOffset" Type="Edm.Int32" />
+    <Property Name="ParentAccountId_Id" Type="Edm.Guid" />
+    <Property Name="ParentAccountId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="ParentAccountId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Line2" Type="Edm.String" MaxLength="Max" />
+    <Property Name="BusinessTypeCode_Value" Type="Edm.Int32" />
+    <Property Name="Aging60_Base_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="ModifiedOnBehalfBy_Id" Type="Edm.Guid" />
+    <Property Name="ModifiedOnBehalfBy_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="ModifiedOnBehalfBy_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="StockExchange" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Line3" Type="Edm.String" MaxLength="Max" />
+    <Property Name="MasterId_Id" Type="Edm.Guid" />
+    <Property Name="MasterId_LogicalName" Type="Edm.String" MaxLength="Max" />
+    <Property Name="MasterId_Name" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Aging90_Value" Type="Edm.Decimal" Precision="18" />
+    <Property Name="StatusCode_Value" Type="Edm.Int32" />
+    <Property Name="Address2_PostOfficeBox" Type="Edm.String" MaxLength="Max" />
+    <Property Name="SharesOutstanding" Type="Edm.Int32" />
+    <Property Name="Address1_StateOrProvince" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Latitude" Type="Edm.Double" />
+    <Property Name="ModifiedOn" Type="Edm.DateTime" />
+    <Property Name="Address2_Line3" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_UTCOffset" Type="Edm.Int32" />
+    <Property Name="PreferredAppointmentDayCode_Value" Type="Edm.Int32" />
+    <Property Name="PreferredAppointmentTimeCode_Value" Type="Edm.Int32" />
+    <Property Name="EMailAddress1" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address2_StateOrProvince" Type="Edm.String" MaxLength="Max" />
+    <Property Name="Address1_Composite" Type="Edm.String" MaxLength="Max" />
+    <Property Name="IndustryCode_Value" Type="Edm.Int32" />
+    <Property Name="Address1_Telephone3" Type="Edm.String" MaxLength="Max" />
+    <NavigationProperty Name="Referencingaccount_master_account" Relationship="LightSwitchApplication.Account_Referencingaccount_master_account_Account_Referencedacco" ToRole="Account_Referencedaccount_master_account" FromRole="Account_Referencingaccount_master_account" />
+    <NavigationProperty Name="Referencedaccount_master_account" Relationship="LightSwitchApplication.Account_Referencingaccount_master_account_Account_Referencedacco" ToRole="Account_Referencingaccount_master_account" FromRole="Account_Referencedaccount_master_account" />
+    <NavigationProperty Name="Referencingaccount_parent_account" Relationship="LightSwitchApplication.Account_Referencingaccount_parent_account_Account_Referencedacco" ToRole="Account_Referencedaccount_parent_account" FromRole="Account_Referencingaccount_parent_account" />
+    <NavigationProperty Name="Referencedaccount_parent_account" Relationship="LightSwitchApplication.Account_Referencingaccount_parent_account_Account_Referencedacco" ToRole="Account_Referencingaccount_parent_account" FromRole="Account_Referencedaccount_parent_account" />
+  </EntityType>
+  <Association Name="Account_Referencingaccount_master_account_Account_Referencedacco">
+    <End Role="Account_Referencedaccount_master_account" Type="LightSwitchApplication.Account" Multiplicity="0..1" />
+    <End Role="Account_Referencingaccount_master_account" Type="LightSwitchApplication.Account" Multiplicity="*" />
+  </Association>
+  <Association Name="Account_Referencingaccount_parent_account_Account_Referencedacco">
+    <End Role="Account_Referencedaccount_parent_account" Type="LightSwitchApplication.Account" Multiplicity="0..1" />
+    <End Role="Account_Referencingaccount_parent_account" Type="LightSwitchApplication.Account" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="sjkpdev07ContextData" m:IsDefaultEntityContainer="true">
+    <EntitySet Name="AccountSet" EntityType="LightSwitchApplication.Account" />
+    <AssociationSet Name="Account_Referencingaccount_master_account_Account_Referencedacco" Association="LightSwitchApplication.Account_Referencingaccount_master_account_Account_Referencedacco">
+      <End Role="Account_Referencedaccount_master_account" EntitySet="AccountSet" />
+      <End Role="Account_Referencingaccount_master_account" EntitySet="AccountSet" />
+    </AssociationSet>
+    <AssociationSet Name="Account_Referencingaccount_parent_account_Account_Referencedacco" Association="LightSwitchApplication.Account_Referencingaccount_parent_account_Account_Referencedacco">
+      <End Role="Account_Referencedaccount_parent_account" EntitySet="AccountSet" />
+      <End Role="Account_Referencingaccount_parent_account" EntitySet="AccountSet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityContainer
+    Name="sjkpdev07ContextData"
+    DataProvider="AstoriaDataProvider">
+    <EntityContainer.Attributes>
+      <Partial
+        IsPrimary="True" />
+    </EntityContainer.Attributes>
+    <SubmitOperation
+      Name="SaveChanges" />
+  </EntityContainer>
+  <DataService
+    Name="sjkpdev07ContextDataDataService"
+    EntityContainer="sjkpdev07ContextData">
+    <DataService.Attributes>
+      <CsdlEntityContainer
+        Name="sjkpdev07Context"
+        Namespace="Microsoft.Crm.Sdk.Data.Services" />
+      <Partial
+        IsPrimary="True" />
+    </DataService.Attributes>
+    <DataService.ConnectionProperties>
+      <ConnectionProperty
+        Name="ConnectionStringGuid"
+        Value="fda05e18-9007-4c47-9911-54aa842a7cb7" />
+      <ConnectionProperty
+        Name="ProjectMetadata"
+        Value="sjkpdev07ContextData" />
+    </DataService.ConnectionProperties>
+  </DataService>
+</ServiceApplication>

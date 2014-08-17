@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="sjkpdev07ContextDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="sjkpdev07ContextDataStore">
+    <EntitySet Name="AccountSet" EntityType="sjkpdev07ContextDataStore.Account" store:Type="Tables" Schema="dbo" Table="Account" />
+    <AssociationSet Name="Account_Referencingaccount_master_account_Account_Referencedacco" Association="sjkpdev07ContextDataStore.Account_Referencingaccount_master_account_Account_Referencedacco">
+      <End Role="Account_Referencedaccount_master_account" EntitySet="AccountSet" />
+      <End Role="Account_Referencingaccount_master_account" EntitySet="AccountSet" />
+    </AssociationSet>
+    <AssociationSet Name="Account_Referencingaccount_parent_account_Account_Referencedacco" Association="sjkpdev07ContextDataStore.Account_Referencingaccount_parent_account_Account_Referencedacco">
+      <End Role="Account_Referencedaccount_parent_account" EntitySet="AccountSet" />
+      <End Role="Account_Referencingaccount_parent_account" EntitySet="AccountSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="TerritoryCode.Value" Type="int" />
+    <Property Name="LastUsedInCampaign" Type="datetime" />
+    <Property Name="Address1_Name" Type="nvarchar(max)" />
+    <Property Name="Address1_Telephone2" Type="nvarchar(max)" />
+    <Property Name="OverriddenCreatedOn" Type="datetime" />
+    <Property Name="EntityImageId" Type="uniqueidentifier" />
+    <Property Name="OwnershipCode.Value" Type="int" />
+    <Property Name="PrimaryContactId.Id" Type="uniqueidentifier" />
+    <Property Name="PrimaryContactId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="PrimaryContactId.Name" Type="nvarchar(max)" />
+    <Property Name="CreditLimit.Value" Type="decimal" Precision="18" />
+    <Property Name="EntityImage_URL" Type="nvarchar(max)" />
+    <Property Name="TerritoryId.Id" Type="uniqueidentifier" />
+    <Property Name="TerritoryId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="TerritoryId.Name" Type="nvarchar(max)" />
+    <Property Name="EntityImage_Timestamp" Type="bigint" />
+    <Property Name="Telephone3" Type="nvarchar(max)" />
+    <Property Name="DoNotBulkPostalMail" Type="bit" />
+    <Property Name="Address1_FreightTermsCode.Value" Type="int" />
+    <Property Name="Address2_Line1" Type="nvarchar(max)" />
+    <Property Name="EMailAddress2" Type="nvarchar(max)" />
+    <Property Name="Address2_PrimaryContactName" Type="nvarchar(max)" />
+    <Property Name="Telephone2" Type="nvarchar(max)" />
+    <Property Name="TimeZoneRuleVersionNumber" Type="int" />
+    <Property Name="OwningTeam.Id" Type="uniqueidentifier" />
+    <Property Name="OwningTeam.LogicalName" Type="nvarchar(max)" />
+    <Property Name="OwningTeam.Name" Type="nvarchar(max)" />
+    <Property Name="ShippingMethodCode.Value" Type="int" />
+    <Property Name="Address1_AddressId" Type="uniqueidentifier" />
+    <Property Name="Address2_Telephone1" Type="nvarchar(max)" />
+    <Property Name="Address1_Fax" Type="nvarchar(max)" />
+    <Property Name="OwningBusinessUnit.Id" Type="uniqueidentifier" />
+    <Property Name="OwningBusinessUnit.LogicalName" Type="nvarchar(max)" />
+    <Property Name="OwningBusinessUnit.Name" Type="nvarchar(max)" />
+    <Property Name="OwnerId.Id" Type="uniqueidentifier" />
+    <Property Name="OwnerId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="OwnerId.Name" Type="nvarchar(max)" />
+    <Property Name="CreatedOnBehalfBy.Id" Type="uniqueidentifier" />
+    <Property Name="CreatedOnBehalfBy.LogicalName" Type="nvarchar(max)" />
+    <Property Name="CreatedOnBehalfBy.Name" Type="nvarchar(max)" />
+    <Property Name="Address2_Latitude" Type="float" />
+    <Property Name="PreferredContactMethodCode.Value" Type="int" />
+    <Property Name="Address2_Composite" Type="nvarchar(max)" />
+    <Property Name="Aging90_Base.Value" Type="decimal" Precision="18" />
+    <Property Name="Address2_PostalCode" Type="nvarchar(max)" />
+    <Property Name="Merged" Type="bit" />
+    <Property Name="PaymentTermsCode.Value" Type="int" />
+    <Property Name="DoNotSendMM" Type="bit" />
+    <Property Name="Address2_County" Type="nvarchar(max)" />
+    <Property Name="Aging30.Value" Type="decimal" Precision="18" />
+    <Property Name="Address2_City" Type="nvarchar(max)" />
+    <Property Name="DoNotBulkEMail" Type="bit" />
+    <Property Name="ImportSequenceNumber" Type="int" />
+    <Property Name="EMailAddress3" Type="nvarchar(max)" />
+    <Property Name="Address1_City" Type="nvarchar(max)" />
+    <Property Name="WebSiteURL" Type="nvarchar(max)" />
+    <Property Name="Revenue.Value" Type="decimal" Precision="18" />
+    <Property Name="TransactionCurrencyId.Id" Type="uniqueidentifier" />
+    <Property Name="TransactionCurrencyId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="TransactionCurrencyId.Name" Type="nvarchar(max)" />
+    <Property Name="Address1_ShippingMethodCode.Value" Type="int" />
+    <Property Name="Address1_PostOfficeBox" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="TickerSymbol" Type="nvarchar(max)" />
+    <Property Name="Address2_Longitude" Type="float" />
+    <Property Name="SIC" Type="nvarchar(max)" />
+    <Property Name="Address1_County" Type="nvarchar(max)" />
+    <Property Name="OwningUser.Id" Type="uniqueidentifier" />
+    <Property Name="OwningUser.LogicalName" Type="nvarchar(max)" />
+    <Property Name="OwningUser.Name" Type="nvarchar(max)" />
+    <Property Name="Address2_AddressId" Type="uniqueidentifier" />
+    <Property Name="CreditLimit_Base.Value" Type="decimal" Precision="18" />
+    <Property Name="PreferredSystemUserId.Id" Type="uniqueidentifier" />
+    <Property Name="PreferredSystemUserId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="PreferredSystemUserId.Name" Type="nvarchar(max)" />
+    <Property Name="MarketCap.Value" Type="decimal" Precision="18" />
+    <Property Name="Address1_PrimaryContactName" Type="nvarchar(max)" />
+    <Property Name="DoNotPostalMail" Type="bit" />
+    <Property Name="AccountCategoryCode.Value" Type="int" />
+    <Property Name="StateCode.Value" Type="int" />
+    <Property Name="Address2_Telephone3" Type="nvarchar(max)" />
+    <Property Name="Address2_AddressTypeCode.Value" Type="int" />
+    <Property Name="EntityImage" Type="varbinary(max)" />
+    <Property Name="DoNotFax" Type="bit" />
+    <Property Name="DefaultPriceLevelId.Id" Type="uniqueidentifier" />
+    <Property Name="DefaultPriceLevelId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="DefaultPriceLevelId.Name" Type="nvarchar(max)" />
+    <Property Name="ParticipatesInWorkflow" Type="bit" />
+    <Property Name="CustomerSizeCode.Value" Type="int" />
+    <Property Name="Address2_UPSZone" Type="nvarchar(max)" />
+    <Property Name="PreferredServiceId.Id" Type="uniqueidentifier" />
+    <Property Name="PreferredServiceId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="PreferredServiceId.Name" Type="nvarchar(max)" />
+    <Property Name="UTCConversionTimeZoneCode" Type="int" />
+    <Property Name="DoNotEMail" Type="bit" />
+    <Property Name="Aging60.Value" Type="decimal" Precision="18" />
+    <Property Name="CustomerTypeCode.Value" Type="int" />
+    <Property Name="Telephone1" Type="nvarchar(max)" />
+    <Property Name="CreatedBy.Id" Type="uniqueidentifier" />
+    <Property Name="CreatedBy.LogicalName" Type="nvarchar(max)" />
+    <Property Name="CreatedBy.Name" Type="nvarchar(max)" />
+    <Property Name="Address2_Name" Type="nvarchar(max)" />
+    <Property Name="ModifiedBy.Id" Type="uniqueidentifier" />
+    <Property Name="ModifiedBy.LogicalName" Type="nvarchar(max)" />
+    <Property Name="ModifiedBy.Name" Type="nvarchar(max)" />
+    <Property Name="Aging30_Base.Value" Type="decimal" Precision="18" />
+    <Property Name="YomiName" Type="nvarchar(max)" />
+    <Property Name="Address2_Country" Type="nvarchar(max)" />
+    <Property Name="Address2_Fax" Type="nvarchar(max)" />
+    <Property Name="Address1_UPSZone" Type="nvarchar(max)" />
+    <Property Name="Address1_PostalCode" Type="nvarchar(max)" />
+    <Property Name="Address1_Country" Type="nvarchar(max)" />
+    <Property Name="NumberOfEmployees" Type="int" />
+    <Property Name="Address2_FreightTermsCode.Value" Type="int" />
+    <Property Name="AccountRatingCode.Value" Type="int" />
+    <Property Name="FtpSiteURL" Type="nvarchar(max)" />
+    <Property Name="Address1_Longitude" Type="float" />
+    <Property Name="AccountId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="OriginatingLeadId.Id" Type="uniqueidentifier" />
+    <Property Name="OriginatingLeadId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="OriginatingLeadId.Name" Type="nvarchar(max)" />
+    <Property Name="Fax" Type="nvarchar(max)" />
+    <Property Name="CreditOnHold" Type="bit" />
+    <Property Name="Address1_Telephone1" Type="nvarchar(max)" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="ExchangeRate" Type="decimal" Precision="18" />
+    <Property Name="Address2_ShippingMethodCode.Value" Type="int" />
+    <Property Name="Address2_Line2" Type="nvarchar(max)" />
+    <Property Name="VersionNumber" Type="bigint" />
+    <Property Name="AccountNumber" Type="nvarchar(max)" />
+    <Property Name="Address1_Line1" Type="nvarchar(max)" />
+    <Property Name="Revenue_Base.Value" Type="decimal" Precision="18" />
+    <Property Name="DoNotPhone" Type="bit" />
+    <Property Name="AccountClassificationCode.Value" Type="int" />
+    <Property Name="PreferredEquipmentId.Id" Type="uniqueidentifier" />
+    <Property Name="PreferredEquipmentId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="PreferredEquipmentId.Name" Type="nvarchar(max)" />
+    <Property Name="MarketCap_Base.Value" Type="decimal" Precision="18" />
+    <Property Name="StageId" Type="uniqueidentifier" />
+    <Property Name="ProcessId" Type="uniqueidentifier" />
+    <Property Name="Address2_Telephone2" Type="nvarchar(max)" />
+    <Property Name="Address1_AddressTypeCode.Value" Type="int" />
+    <Property Name="Address1_UTCOffset" Type="int" />
+    <Property Name="ParentAccountId.Id" Type="uniqueidentifier" />
+    <Property Name="ParentAccountId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="ParentAccountId.Name" Type="nvarchar(max)" />
+    <Property Name="Address1_Line2" Type="nvarchar(max)" />
+    <Property Name="BusinessTypeCode.Value" Type="int" />
+    <Property Name="Aging60_Base.Value" Type="decimal" Precision="18" />
+    <Property Name="ModifiedOnBehalfBy.Id" Type="uniqueidentifier" />
+    <Property Name="ModifiedOnBehalfBy.LogicalName" Type="nvarchar(max)" />
+    <Property Name="ModifiedOnBehalfBy.Name" Type="nvarchar(max)" />
+    <Property Name="StockExchange" Type="nvarchar(max)" />
+    <Property Name="Address1_Line3" Type="nvarchar(max)" />
+    <Property Name="MasterId.Id" Type="uniqueidentifier" />
+    <Property Name="MasterId.LogicalName" Type="nvarchar(max)" />
+    <Property Name="MasterId.Name" Type="nvarchar(max)" />
+    <Property Name="Aging90.Value" Type="decimal" Precision="18" />
+    <Property Name="StatusCode.Value" Type="int" />
+    <Property Name="Address2_PostOfficeBox" Type="nvarchar(max)" />
+    <Property Name="SharesOutstanding" Type="int" />
+    <Property Name="Address1_StateOrProvince" Type="nvarchar(max)" />
+    <Property Name="Address1_Latitude" Type="float" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="Address2_Line3" Type="nvarchar(max)" />
+    <Property Name="Address2_UTCOffset" Type="int" />
+    <Property Name="PreferredAppointmentDayCode.Value" Type="int" />
+    <Property Name="PreferredAppointmentTimeCode.Value" Type="int" />
+    <Property Name="EMailAddress1" Type="nvarchar(max)" />
+    <Property Name="Address2_StateOrProvince" Type="nvarchar(max)" />
+    <Property Name="Address1_Composite" Type="nvarchar(max)" />
+    <Property Name="IndustryCode.Value" Type="int" />
+    <Property Name="Address1_Telephone3" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="Account_Referencingaccount_master_account_Account_Referencedacco">
+    <End Role="Account_Referencedaccount_master_account" Type="sjkpdev07ContextDataStore.Account" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Account_Referencingaccount_master_account" Type="sjkpdev07ContextDataStore.Account" Multiplicity="*" />
+  </Association>
+  <Association Name="Account_Referencingaccount_parent_account_Account_Referencedacco">
+    <End Role="Account_Referencedaccount_parent_account" Type="sjkpdev07ContextDataStore.Account" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Account_Referencingaccount_parent_account" Type="sjkpdev07ContextDataStore.Account" Multiplicity="*" />
+  </Association>
+</Schema>
