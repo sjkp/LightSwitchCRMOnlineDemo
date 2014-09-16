@@ -263,9 +263,6 @@
       <LastGenOutput>sjkpdev07ContextData.Designer.cs</LastGenOutput>
       <EntityContainer>sjkpdev07ContextData</EntityContainer>
     </LightSwitchExternalDataSource>
-    <Content Include="GeneratedArtifacts\LSCodeGeneratedFiles.lsgen" />
-    <Content Include="GeneratedArtifacts\LSResourceGeneratedFiles.lsgen" />
-    <Content Include="GeneratedArtifacts\LSSvcGeneratedFiles.lsgen" />
     <Content Include="GeneratedArtifacts\sjkpdev07ContextData.csdl" />
     <Content Include="GeneratedArtifacts\sjkpdev07ContextData.msl" />
     <Content Include="GeneratedArtifacts\sjkpdev07ContextData.ssdl" />
